@@ -7,12 +7,12 @@ You can download WG-EASY from https://github.com/wg-easy/wg-easy
 Use recommended installation, create account and issue a certificate.
 
 
-#CREATE VOLUME:
+# CREATE VOLUME:
 create a volume for project purposes by running:
 docker volume create project_volume1
 
 
-#NGINX:
+# NGINX:
 go to the /nginx dir and open a terminal. Type:
 docker build -t nginx_docker -f Dockerfile .
 
@@ -20,7 +20,7 @@ run nginx:
 docker run -p 8080:80 -v project_volume1:/var/www/html nginx_docker
 
 
-#LOGGER:
+# LOGGER:
 Go to WG-EASY web UI (0.0.0.0:51821 unless changed) login with your password and grab the cookie. Place the cookie in the relevant field in logger.py (line 18) and save the file.
 
 requirements.txt and logger.py should be in the same folder with Dockerfile. Open a terminal and run:
