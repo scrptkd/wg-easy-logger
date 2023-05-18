@@ -13,7 +13,7 @@ create a volume for project purposes by running:
 
 
 ## NGINX:
-go to the /nginx dir and open a terminal. Type:  
+go to the nginx directory and open a terminal. Type:  
 `docker build -t nginx_docker -f Dockerfile .`
 
 run nginx:  
